@@ -6,6 +6,10 @@
     "npm" : ">=7.0.0",
     "node" : ">=16.0.0"
   },
+
+  
+
+
   "dependencies": {
     " ": "^0.26.1",
     "bootstrap": "^4.4.1",
@@ -28,7 +32,7 @@
     "uuid": "^3.4.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts start ng serve --host=0.0.0.0 --configuration=dev --disableHostCheck=true",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

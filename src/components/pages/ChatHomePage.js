@@ -23,7 +23,7 @@ toast.configure();
 const ChatHomePage = (props) => {
   const { chatWith } = queryString.parse(props.location.search);
 
-  const CHAT_ENDPOINT = "https://desolate-cove-06138.herokuapp.com/";
+  const CHAT_ENDPOINT = "'http://localhost:5000/";
 
   const authContext = useContext(AuthContext);
   const { loadUser, user } = authContext;
@@ -71,13 +71,13 @@ const ChatHomePage = (props) => {
   var firstToastId = "a";
   var secondToastId = "a";
   const messageReceived = async (messageData) => {
-    // console.log(messageData);
-    // console.log('userlist:');
-    // console.log(userList);
-    // console.log('chatting user:');
-    // console.log(chattingUser);
-    // console.log('wholechat');
-    // console.log(wholeChat);
+    console.log(messageData);
+    console.log("userlist:");
+    console.log(userList);
+    console.log("chatting user:");
+    console.log(chattingUser);
+    console.log("wholechat");
+    console.log(wholeChat);
     let userIdList = userList.map((u) => u._id.toString());
     //if the receiver is chatting with the sender, just add to the messages
     if (chattingUser && messageData.sender == chattingUser._id) {

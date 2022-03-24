@@ -44,6 +44,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "proxy": "https://desolate-cove-06138.herokuapp.com/"
+  } 
 }
